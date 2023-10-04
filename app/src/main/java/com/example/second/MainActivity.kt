@@ -12,5 +12,6 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById<Button>(R.id.button)
         val inputtext1: EditText = findViewById<EditText>(R.id.editTextText)
         val inputtext2: EditText = findViewById<EditText>(R.id.editTextText2)
+        val inputtext3: EditText = findViewById<EditText>(R.id.editTextText2)
     }
 }
