@@ -11,5 +11,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val button: Button = findViewById<Button>(R.id.button)
         val inputtext1: EditText = findViewById<EditText>(R.id.editTextText)
+        val inputtext2: EditText = findViewById<EditText>(R.id.editTextText2)
     }
 }
