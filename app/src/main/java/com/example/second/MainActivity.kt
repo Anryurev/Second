@@ -12,13 +12,15 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById<Button>(R.id.button)
         val inputtext1: EditText = findViewById<EditText>(R.id.editTextText)
         val inputtext2: EditText = findViewById<EditText>(R.id.editTextText2)
-        val inputtext3: EditText = findViewById<EditText>(R.id.editTextText2)
+        val inputtext3: EditText = findViewById<EditText>(R.id.editTextText3)
         button.setOnClickListener {
             val n = inputtext1.text.toString().toInt()
             val a = inputtext2.text.toString().toDouble()
             var result = 0.0
+            var res = a
             for (i in 0..n){
-                result += result / (a + i)
+                res *= (a + i)
+                result += 1 / res
             }
             inputtext3.setText(result.toString())
         }
